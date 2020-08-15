@@ -2,7 +2,7 @@
 
 Lets build a crypto kitties like dapp clone with truffle
 
-https://www.trufflesuite.com/img/tutorials/pet-shop/dapp.png
+<img src="https://www.trufflesuite.com/img/tutorials/pet-shop/dapp.png" alt="Dapp Pet Shop">
 
 ## Prep - truffle box:
 https://www.trufflesuite.com/boxes/pet-shop
