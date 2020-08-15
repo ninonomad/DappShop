@@ -2,6 +2,16 @@
 
 Lets build a crypto kitties like dapp clone with truffle
 
+__/\\\\\\\\\\\\________/\\\\\\\\\_____/\\\\\\\\\\\\\____/\\\\\\\\\\\\\___        
+ _\/\\\////////\\\____/\\\\\\\\\\\\\__\/\\\/////////\\\_\/\\\/////////\\\_       
+  _\/\\\______\//\\\__/\\\/////////\\\_\/\\\_______\/\\\_\/\\\_______\/\\\_      
+   _\/\\\_______\/\\\_\/\\\_______\/\\\_\/\\\\\\\\\\\\\/__\/\\\\\\\\\\\\\/__     
+    _\/\\\_______\/\\\_\/\\\\\\\\\\\\\\\_\/\\\/////////____\/\\\/////////____    
+     _\/\\\_______\/\\\_\/\\\/////////\\\_\/\\\_____________\/\\\_____________   
+      _\/\\\_______/\\\__\/\\\_______\/\\\_\/\\\_____________\/\\\_____________  
+       _\/\\\\\\\\\\\\/___\/\\\_______\/\\\_\/\\\_____________\/\\\_____________ 
+        _\////////////_____\///________\///__\///______________\///______________
+
 <img src="https://www.trufflesuite.com/img/tutorials/pet-shop/dapp.png" alt="Dapp Pet Shop">
 
 ## Prep - truffle box:
@@ -47,14 +57,14 @@ pragma solidity 0.5.16;
 contract Adoption {
     address[16] public adopters;
 
-    // Function 1: Adopting a pet
+   // Function 1: Adopting a pet
     function adopt(uint petId) public returns (uint) {
         require(petId >= 0 && petId <= 15);
         adopters[petId] = msg.sender;
         return petId;
     }
 
-    // F2: Retrieving the adopters
+   // F2: Retrieving the adopters
     function getAdopters() public view returns (address[16] memory) {
         return adopters;
     }
@@ -82,7 +92,5 @@ truffle test
 // this should deliver compiling *.sol files
 // and TestAdoption "3 passing"
 
-// ...follow further truffle tutotial steps
-
-
+// ...follow further truffle tutotial steps...
 
